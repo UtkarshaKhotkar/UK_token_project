@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "UTK_Token_backend": {
+      "candid": "src/UTK_Token_backend/UTK_Token_backend.did",
+      "package": "UTK_Token_backend",
+      "type": "rust"
+    },
+    "UTK_Token_frontend": {
+      "dependencies": [
+        "UTK_Token_backend"
+      ],
+      "source": [
+        "src/UTK_Token_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "UTK_Token_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
